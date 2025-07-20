@@ -49,6 +49,11 @@ button {
     transition: filter 0.2s ease, transform 0.1s ease;
 }
 
+button i {
+  font-size: 25px;
+  line-height: 1;
+}
+
 button:hover {
   filter: brightness(1.55); /* Slightly brighten */
 }
