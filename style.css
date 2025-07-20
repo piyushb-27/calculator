@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+body {
+    background-color: var(--bg-color);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+    box-sizing:border-box;
+    
+}
+
+.box {
+    border-radius: 20px;
+}
+
+.buttons-container {
+    background-color: var(--top-box-bg);
+    padding:25px 10px 10px 10px;
+    border-radius: 0 0 20px 20px;
+}
+
+.box-sticked-to-buttons {
+    background-color: var(--top-box-bg);
+    border-radius: 20px 20px 0 0; 
+}
+
+.display-box {
+    font-family:"Montserrat", Arial;
+    height:150px;
+    background-color: var(--display-bg);
+    border-radius:20px;
+}
+
+button {
+    font-family:"Montserrat", Arial;
+    width: 75px;
+    height: 75px;
+    margin:3px;
+    border-radius:100%;
+    padding:0;
+    font-size:30px;
+    border:none;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
+    transition: filter 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  filter: brightness(1.55); /* Slightly brighten */
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.numbers, #escape, #decimal {
+    background-color: var(--number-btn-bg);
+    color: var(--number-text);
+}
+
+.operator, #change-theme {
+    background-color: var(--operator-btn-bg);
+    color: var(--operator-text);
+}
+
+#AC {
+    background-color: var(--ac-btn-bg);
+    color: var(--ac-text);
+}
+
+#equal {
+    background-color: var(--equal-btn-bg);
+    color: var(--equal-text);
+}
