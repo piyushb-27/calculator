@@ -12,6 +12,13 @@ body {
     
 }
 
+body, 
+.display-box,
+.buttons-container,
+button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .box {
     border-radius: 20px;
 }
@@ -55,7 +62,7 @@ button i {
 }
 
 button:hover {
-  filter: brightness(1.55); /* Slightly brighten */
+  filter: brightness(1.55);
 }
 
 button:active {
