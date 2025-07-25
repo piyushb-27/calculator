@@ -14,7 +14,7 @@ body {
 
 body, 
 .display-box,
-.buttons-container,
+.buttons-container, 
 button {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -56,6 +56,7 @@ button {
     position: relative;
     overflow: hidden;
     transition: filter 0.2s ease, transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 button i {
@@ -109,3 +110,28 @@ button:active {
     font-size: 40px;
 }
 
+@media (max-width: 380px) {
+  .box {
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  button {
+    width: 65px;  
+    height: 65px; 
+    font-size: 26px; 
+  }
+
+  button i {
+    font-size: 22px;
+  }
+
+  .buttons-container {
+    padding: 15px 5px; 
+  }
+
+  .display-box {
+    height: 120px;
+    padding-right: 25px;
+  }
+}
