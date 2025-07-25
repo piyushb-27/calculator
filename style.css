@@ -21,6 +21,8 @@ button {
 
 .box {
     border-radius: 20px;
+    width:100%;
+    max-width:356px;
 }
 
 .buttons-container {
@@ -53,7 +55,7 @@ button {
     cursor:pointer;
     position: relative;
     overflow: hidden;
-    transition: filter 0.2s ease, transform 0.1s ease;
+    transition: filter 0.2s ease, transform 0.2s ease;
 }
 
 button i {
@@ -63,6 +65,7 @@ button i {
 
 button:hover {
   filter: brightness(1.55);
+  transform: scale(1.03)
 }
 
 button:active {
@@ -88,3 +91,21 @@ button:active {
     background-color: var(--equal-btn-bg);
     color: var(--equal-text);
 }
+
+.display-box {
+    display:flex;
+    flex-direction:column;
+    color:white;
+    align-items:flex-end;
+    gap:40px;
+    padding:15px 35px 10px 15px;
+    overflow-x: auto; 
+    white-space: nowrap;
+
+
+}
+
+.input-display, .result-display {
+    font-size: 40px;
+}
+
